@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="philImage" translatesAutoresizingMaskIntoConstraints="NO" id="dcL-kg-hgz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="310.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dcL-kg-hgz" secondAttribute="height" multiplier="4:3" id="aGy-s6-qYU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbE-hY-DdU">
+                                <rect key="frame" x="16" y="362.5" width="382" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Z2C-8l-Gdd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhoneメンターのフィルだよ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdz-oG-QAW">
+                                <rect key="frame" x="16" y="410.5" width="382" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rHA-Ym-k5f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="HMw-rB-1uL">
+                                <rect key="frame" x="48" y="647" width="318" height="167"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Jxh-dL-vJi">
+                                        <rect key="frame" x="0.0" y="0.0" width="318" height="75.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9O-pW-GEN">
+                                                <rect key="frame" x="0.0" y="0.0" width="151" height="75.5"/>
+                                                <color key="backgroundColor" red="0.0" green="0.70588235294117641" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="c9O-pW-GEN" secondAttribute="height" multiplier="2:1" id="3Hv-72-63D"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="プロフィール">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapButton1" destination="BYZ-38-t0r" eventType="touchUpInside" id="xNh-6W-QhG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4w-Vz-kxq">
+                                                <rect key="frame" x="167" y="0.0" width="151" height="75.5"/>
+                                                <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="スポーツ">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapButton2" destination="BYZ-38-t0r" eventType="touchUpInside" id="svy-ky-7ao"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="C4w-Vz-kxq" firstAttribute="width" secondItem="C4w-Vz-kxq" secondAttribute="height" multiplier="2:1" id="OkA-MU-a8f"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8s9-nG-ni9">
+                                        <rect key="frame" x="0.0" y="91.5" width="318" height="75.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wU5-HS-aGo">
+                                                <rect key="frame" x="0.0" y="0.0" width="151" height="75.5"/>
+                                                <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="wU5-HS-aGo" secondAttribute="height" multiplier="2:1" id="p4W-Fc-w2l"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="好きな食べ物">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapButton3" destination="BYZ-38-t0r" eventType="touchUpInside" id="nrR-SR-KSB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8R-Z3-YFE">
+                                                <rect key="frame" x="167" y="0.0" width="151" height="75.5"/>
+                                                <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="t8R-Z3-YFE" secondAttribute="height" multiplier="2:1" id="CY0-se-eB6"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="趣味">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapButton4" destination="BYZ-38-t0r" eventType="touchUpInside" id="vpm-Vv-EyC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dbE-hY-DdU" firstAttribute="top" secondItem="dcL-kg-hgz" secondAttribute="bottom" constant="8" id="0Fv-oe-Ujq"/>
+                            <constraint firstItem="dcL-kg-hgz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5dn-sC-Ter"/>
+                            <constraint firstItem="HMw-rB-1uL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="7qE-6x-jlk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dcL-kg-hgz" secondAttribute="trailing" id="8vJ-Wh-eoh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rdz-oG-QAW" secondAttribute="trailing" constant="16" id="9Ma-Rd-GP3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HMw-rB-1uL" secondAttribute="bottom" constant="48" id="AMr-wS-vr6"/>
+                            <constraint firstItem="dbE-hY-DdU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Hqp-EI-T6X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dbE-hY-DdU" secondAttribute="trailing" constant="16" id="LS3-ey-fxc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HMw-rB-1uL" secondAttribute="trailing" constant="48" id="Px8-Yf-CFV"/>
+                            <constraint firstItem="Rdz-oG-QAW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="f2D-wp-60W"/>
+                            <constraint firstItem="dcL-kg-hgz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fm5-Nh-hlD"/>
+                            <constraint firstItem="Rdz-oG-QAW" firstAttribute="top" secondItem="dbE-hY-DdU" secondAttribute="bottom" constant="8" id="xtp-zj-FX2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="profileCommentLabel" destination="Rdz-oG-QAW" id="unW-Gk-qYt"/>
+                        <outlet property="profileImageView" destination="dcL-kg-hgz" id="JbK-eZ-MPU"/>
+                        <outlet property="profileLabel" destination="dbE-hY-DdU" id="lZm-hj-8LM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="philImage" width="1000" height="750"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
